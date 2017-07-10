@@ -5,7 +5,7 @@ export interface ISnSMessage {
     SubscribeURL: string;
 }
 
-class MessageValidator {
+declare class MessageValidator {
     constructor(hostPattern?: string, encoding?: string);
     validate(hash: string, cb: (error: Error, message: ISnSMessage) => void);
 }
